@@ -1,0 +1,100 @@
+.hero-wrapper {
+    background-color: var(--black);
+    color: white;
+    padding-top: 4rem;
+}
+
+.hero-container {
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+    row-gap: 2rem;
+}
+
+.hero-container>div {
+    flex: 1;
+}
+
+/* Right side */
+
+.hero-container .right {
+    text-align: center;
+}
+
+.hero-container img {
+    width: 30rem;
+    height: 35rem;
+    border: 8px solid grey;
+    border-radius: 50% 50% 0 0;
+}
+
+/* Left Side */
+
+.hero-container .left {
+    flex-basis: 40%;
+}
+
+.hero-container .left>* {
+    margin-top: 3rem;
+}
+
+.hero-container h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 600;
+}
+
+.hero-container .orangeCircle {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: var(--orange-gradient);
+    position: absolute;
+    z-index: -1;
+    top: -2rem;
+    left: 16rem;
+}
+
+.hero-container .geoTextBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border: 3px solid grey;
+    border-radius: 7px;
+    padding: 0.7rem;
+}
+
+.hero-container .geoTextBox input {
+    width: 65%;
+    border: 0;
+}
+.hero-container .geoTextBox input:focus {
+    outline: none;
+}
+
+.hero-container .data {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    text-align: center;
+}
+
+.hero-container .primary {
+    font-size: 2rem;
+}
+
+.hero-container .primary span {
+    color: orange;
+}
+
+@media (max-width: 640px) {
+    .hero-container img {
+        width: 20rem;
+        height: 25rem;
+    }
+}

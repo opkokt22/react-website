@@ -1,0 +1,31 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-container .left {
+    flex-basis: 20%;
+}
+
+.footer-container .left img {
+    width: 120px;
+}
+
+.footer-container .right ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+@media (max-width: 640px) {
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
